@@ -1,9 +1,12 @@
 {
+  "homepage": "https://vanitha-2.github.io/VIP",
   "name": "lmsproject",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
